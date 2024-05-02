@@ -1,45 +1,169 @@
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1;
-  color: #000;
-  background-color: #fff;
-  margin: 10;
+html, body {
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0px;
+  height: 90%;
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.row {
+  flex: 1;
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  border: 0px solid black;
+  box-sizing: border-box;
+}
+.vl {
+border-left: 2px solid #DDDDDD;
+height: 100%;
+}
+
+.top {
+  flex: 1;
+  display: flex;
+}
+.top .col {
+  border: none;
+}
+.top .col:first-child {
+  border-right: 0px solid black;
+}
+
+  .label {
+      color: #707070;
+      padding: 8px;
+      font-size: 16px;
+  }
+
+  .labelLi {
+    color: #707070;
+    font-size: 16px;
+    width:120px;
+}
+
+.fixedLi{
+  height: 18px;
   overflow: hidden;
 }
 
-p{
-  color:#282828;
+.dataLi{
+  width:90px;
+}
+
+.labelLi2 {
+  color: #707070;
   font-size: 16px;
+  margin-left:50px;
+  width:120px;
+}
+
+.dataLi2{
+width:50px;
+}
+
+  hr {
+  height: 2px;
+  background-color: white;
+  border: none;
+}
+
+.plan-button {
+  background-color: #83A8BF;
+  font-size: 14px;
+  color: white;
+  border: 0px;
+  border-radius: 2px;
+  height: 24px;
+  width: 127px;
+  position:absolute;
+  top: 254px;
+  left: 391;
+  cursor:pointer;
+
+}
+
+ul {
+  margin-left: 8px;
+  margin-right: 10;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  list-style-type: none;
+  padding: 0;
+  border: 2px solid #DDDDDD; /* Add a thin border */
+}
+.scroll{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.top-row{
+  height: 215px;
+}
+.top-row-top{
+  height: 107.5px;
+}
+.top-row-bottom{
+  height: 85px;
+}
+
+.middle-row{
+  height: 150px;
+}
+.bottom-row{
+  height: 90px;
+}
+li {
+  margin-bottom: 0px;
+  border-bottom: 1px solid #DDDDDD; /* Add a thin border */
+  padding: 6px; /* Add some padding for better spacing */
+  display: flex; /* Use flexbox for better alignment */
+  align-items: center; /* Align items vertically */
+  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+.contact-value {
+  text-align: left; /* Align text to the right */
+  left: 125px;
+  flex-grow: 1; /* Allow it to take up remaining space */
+  margin-left: 20px; /* Adjust the distance from the type elements */
+
+}
+.info-value {
+  text-align: left; /* Align text to the right */
+  left: 125px;
+  position: absolute;
+  flex-grow: 1; /* Allow it to take up remaining space */
+  margin-left: 20px; /* Adjust the distance from the type elements */
+
+}
+
+.plan-value {
+  text-align: left; /* Align text to the right */
+  left: 25px;
+  flex-grow: 1; /* Allow it to take up remaining space */
+  margin-left: 20px; /* Adjust the distance from the type elements */
+
+}
+
+.note-value {
+  text-align: left; /* Align text to the right */
+  left: 25px;
+  flex-grow: 1; /* Allow it to take up remaining space */
+  margin-left: 20px; /* Adjust the distance from the type elements */
+
 }
 
 
-h1 {
-  background-color:#006690;
-  color: #fff;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 1.2;
-  margin: 0 0 10px;
+typeElement {
+  color: #707070;
+  margin-right: 10px; /* Add some margin between the symbol and the text */
 }
 
-.tintedBlackLeft {
-  background-color:#00000033;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.2;
-  padding:11px 11px 11px 0px;
-}
-
-button {
-  padding: 5px 9px 5px 9px;
-  border-radius: 3px;
-  font-size: 18px;
-  border: 1px solid #0091CE;
-  background-color: #0091CE;
-  color: #fff;
-}
