@@ -39,21 +39,11 @@ const dobLabelSpan = document.createElement("span");
 dobLabelSpan.innerHTML = infoData[0].type;;
 dobLabelSpan.classList.add("labelLi");
 const dobSpan = document.createElement("span");
-dobSpan.classList.add("dataLi");
 dobSpan.innerHTML = infoData[0].value;
-
-const sexLabelSpan = document.createElement("span");
-sexLabelSpan.innerHTML = infoData[7].type;;
-sexLabelSpan.classList.add("labelLi2");
-const sexSpan = document.createElement("span");
-sexSpan.classList.add("dataLi2");
-sexSpan.innerHTML = infoData[7].value;
 
 
 dobLi.appendChild(dobLabelSpan);
 dobLi.appendChild(dobSpan);
-dobLi.appendChild(sexLabelSpan);
-dobLi.appendChild(sexSpan);
 list.appendChild(dobLi);
 
 
@@ -64,22 +54,12 @@ const medLabelSpan = document.createElement("span");
 medLabelSpan.innerHTML = infoData[1].type;;
 medLabelSpan.classList.add("labelLi");
 const medSpan = document.createElement("span");
-medSpan.classList.add("dataLi");
 medSpan.classList.add("fixedLi");
 medSpan.innerHTML = infoData[1].value;
 
-const medAltLabelSpan = document.createElement("span");
-medAltLabelSpan.innerHTML = infoData[8].type;;
-medAltLabelSpan.classList.add("labelLi2");
-const medAltSpan = document.createElement("span");
-medAltSpan.classList.add("dataLi2");
-medAltSpan.classList.add("fixedLi");
-medAltSpan.innerHTML = infoData[8].value;
 
 MedicareLi.appendChild(medLabelSpan);
 MedicareLi.appendChild(medSpan);
-MedicareLi.appendChild(medAltLabelSpan);
-MedicareLi.appendChild(medAltSpan);
 list.appendChild(MedicareLi);
 
 
@@ -96,18 +76,20 @@ partASpan.innerHTML = infoData[2].value;
 
 const partBLabelSpan = document.createElement("span");
 partBLabelSpan.innerHTML = infoData[3].type;;
-partBLabelSpan.classList.add("labelLi2");
+partBLabelSpan.classList.add("labelLi");
 const partBSpan = document.createElement("span");
-partBSpan.classList.add("dataLi2");
-partBSpan.classList.add("fixedLi");
 partBSpan.innerHTML = infoData[3].value;
 
 
 PartLi.appendChild(partALabelSpan);
 PartLi.appendChild(partASpan);
-PartLi.appendChild(partBLabelSpan);
-PartLi.appendChild(partBSpan);
+
+const PartBLi = document.createElement("li");
+
+PartBLi.appendChild(partBLabelSpan);
+PartBLi.appendChild(partBSpan);
 list.appendChild(PartLi);
+list.appendChild(PartBLi);
 
 
 
